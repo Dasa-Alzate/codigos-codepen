@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+.grid-container {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 55vw 45vw;
+    grid-template-rows: 100vh;
+    height: auto;
+    color: #101210;
+    overflow-x: hidden;
+    text-wrap: wrap;
+  }
+
+.grid-item {
+    vertical-align: middle;
+    text-align: left;
+    align-self: center;
+}
+
+.title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    letter-spacing: -8px;
+    justify-self: left;
+    padding-left: 10vw;
+    font-size: 6rem;
+}
+
+.list {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    font-size: x-large;
+    
+}
+
+.list a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #101210;
+    margin-top: 5px;
+    transition: font-weight 0.2s ease-out;
+}
+
+.list-number {
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.grid-container .list a:hover ~ .bg-container {
+    opacity: 0;
+} 
+
+.list a:hover {
+    font-weight: 700;
+} 
+
+.list a::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 0;
+  width: calc(100% - 25px);
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.list a:hover::before {
+  transform: scaleX(1);
+}
+
+.bg-container {
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.mesh-gradient {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mesh-gradient div {
+    opacity: .5;
+    border-radius: 50vmax;
+    position: relative;
+    filter: blur(10vmax);
+}
+
+.mesh-gradient :nth-child(1) {
+    background-color: rgb(6 78 59);
+    width: 40vmax;
+    height: 40vmax;
+    animation: shape-1 linear 5s infinite;
+}
+
+.mesh-gradient :nth-child(2) {
+    background-color: rgb(33, 71, 85);
+    width: 30vmax;
+    height: 40vmax;
+    animation: shape-2 linear 5s infinite;
+}
+
+.mesh-gradient :nth-child(3) {
+    background-color: rgb(100, 64, 74);
+    width: 50vmax;
+    height: 20vmax;
+    animation: shape-3 linear 5s infinite;
+}
+
+@keyframes shape-1 {
+    0% {left: 0vmax; top: 0vmax; rotate: 30;}
+    25% {left: -10vmax; top: 7vmax;}
+    50% {left: 2vmax; top: 15vmax; rotate: -50;}
+    75% {left: 5vmax; top: 10vmax;}
+    100% {left: 0vmax; top: 0vmax; rotate: 30;}
+}
+
+@keyframes shape-2 {
+    0% {left: 0vmax; top: 1vmax; rotate: -30;}
+    25% {left: 7vmax; top: -1vmax;}
+    50% {left: -4vmax; top: 5vmax; rotate: 80;}
+    75% {left: 4vmax; top: 11vmax;}
+    100% {left: 0vmax; top: 1vmax; rotate: -30;}
+}
+
+@keyframes shape-3 {
+    0% {left: 0vmax; top: 0vmax; rotate: 30;}
+    25% {left: 2vmax; top: 4vmax;}
+    50% {left: -2vmax; top: 10vmax; rotate: 90;}
+    75% {left: -5vmax; top: 7vmax;}
+    100% {left: 0vmax; top: 0vmax; rotate: 30;}
+}
