@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Frost screen effect with text overlay</title>
+</head>
+<body>
+    
+    <img src="https://cdn.pixabay.com/photo/2019/11/30/19/52/trees-4664060_1280.jpg" alt="Trees" class="brightness-110 bg-cover bg-right-bottom h-screen w-screen transform overflow-hidden">
+    
+    <div class="grid grid-cols-2 gap-0 w-screen h-screen bottom-0 left-0 absolute">
+     
+      <div class="backdrop-blur-lg bg-auto bg-left-bottom h-screen mix-blend-overlay overflow-hidden transform transition-all">
+        <p class="right-0 w-fit bottom-2/3 absolute z-50 text-white roboto-condensed-900 w-fit font-bold md:font-medium text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl tracking-tight">BOLD</p>
+        <div class="right-0 top-1/3 absolute w-3/4">
+          <p class="text-right pt-0 text-md text-gray-100 pe-2 ubuntu-500">Stronger than </p>
+        </div>
+      </div>
+      
+      <div>
+        <p class="absolute bottom-2/3 w-fit font-bold lg:text-7xl md:font-medium md:text-6xl roboto-condensed-900 sm:text-5xl text-4xl mix-blend-multiply text-stone-600/75 tracking-tight xl:text-8xl z-40">NESS</p>
+        <p class="absolute top-1/3 w-fit pt-0 text-md mix-blend-multiply text-stone-600/75 ubuntu-500">nature</p>
+      
+    </div>
+    
+    <!-- Navigation bar -->
+    <div class="-top-4 -left-28 z-30 absolute origin-right -translate-x-96 -rotate-90">
+      <nav class="flex *:flex *:items-end justify-end *:w-32 text-sm text-stone-100 text-upper sm:text-base *:text-lg hover:text-stone-50 *:transition-all row typo-advent" aria-label="Global">
+        <a href="#contact" class="hover:font-bold hover:text-amber-100 hover:tracking-wider">Contact</a>
+        <a href="#experience" class="hover:font-bold hover:text-amber-100 hover:tracking-wider">Experience</a>
+        <a href="#about" class="hover:font-bold hover:text-amber-100 hover:tracking-wider">About</a>
+        <a href="#home" class="hover:font-bold hover:text-amber-100 hover:tracking-wider">Home</a>
+      </nav>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com/"></script>
+</body>
+</html>

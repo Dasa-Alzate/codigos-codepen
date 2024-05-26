@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <title>Weather screen ui</title>
+</head>
+<body>
+    <!-- Hero section -->
+    <section id="home">
+    
+        <!-- bg separated from content so the filters don't affect it-->
+        <div class="absolute inset-0 z-0">
+        <div class="h-screen bg-bottom bg-cover transform brightness-50 hue-rotate-90 saturate-50 bg-[url('https://cdn.pixabay.com/photo/2019/07/03/09/49/lights-4314058_1280.jpg')]"></div>
+        </div>
+    
+        <!-- content -->
+        <div class="relative z-10 p-0 h-screen bg-transparent">
+            <div class="absolute static h-2/3 w-screen bottom-0 backdrop-blur-md bg-black/25 sm:relative sm:flex sm:h-screen sm:w-2/5 sm:float-right">
+            
+            <div class="w-full p-4 pt-12 px-8 float-right h-1/2 flex flex-col justify-evenly">
+                <div class="mb-4 relative">
+                <input type="text" class="bg-transparent w-2/3 lg:w-3/4 inline text-slate-300 focus:outline-none border-b border-slate-200 peer" id="username" aria-label="Change location" placeholder=" ">
+                <label for="username" class="cursor-text absolute peer-focus:-top-5 peer-focus:text-sm transition-all top-0 left-0 inline duration-300 peer-focus:text-slate-300/50 text-slate-300 focus:outline-none">Change location</label>
+                <i class="bi bi-search text-slate-200 absolute top-0 right-0 bg-slate-950/50 hover:bg-slate-900/25 p-2 sm:p-4 md:p-6"></i>
+                </div>
+                <div class="group h-full flex flex-col justify-evenly">
+                <p class="text-stone-300 cursor-pointer mt-2 hover:text-stone-200 group-hover:text-lg transition-all duration-300">Paris, France</p>
+                <p class="text-stone-300 cursor-pointer mt-2 hover:text-stone-200 group-hover:text-lg transition-all duration-300">Rome, Italy</p>
+                <p class="text-stone-300 cursor-pointer mt-2 hover:text-stone-200 group-hover:text-lg transition-all duration-300">London, UK</p>
+                </div>
+                <hr class="mt-4">
+            </div>
+            
+            <div class="p-4 px-8 absolute inset-x-0 bottom-0 h-1/2 flex flex-col justify-evenly">
+        <p class="text-slate-300">Humidity <span class="float-right">97%</span></p>
+        <p class="text-slate-300 mt-2">Wind <span class="float-right">West, 21 km/h</span></p>
+        <p class="text-slate-300 mt-2">Clouds <span class="float-right">43%</span></p>
+        <p class="text-slate-300 mt-2">Rain probability <span class="float-right">76%</span></p>
+        <hr class="mt-4">
+    </div>
+            </div>
+        </div>
+        
+        
+        <div class="absolute top-24 sm:top-auto m-auto sm:w-fit sm:m-0 w-1/2 inset-x-0 sm:bottom-20 sm:left-10 grid grid-rows-1 grid-flow-col gap-0">
+        <p class="font-semibold text-6xl text-stone-100">08º</p>
+        <div class="text-4xl">
+            <p class="font-semibold text-xl text-white ms-3 leading-none tracking-wide inline-block align-middle">Madrid</p>
+            <p class="font-semibold text-sm text-stone-300 ms-3 leading-none tracking-tighter">6:24 Monday, 6 Oct '24</p>
+        </div>
+        <div class="text-4xl">
+            <i class="bi bi-cloud-rain font-black text-4xl text-slate-100 inline-block ms-2 align-middle"></i>
+        </div>
+        </div>
+        
+        <div class="absolute top-10 left-10"><p class="font-extralight text-3xl text-white inline ms-4">Weather today</p></div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com/"></script>
+</body>
+</html>
