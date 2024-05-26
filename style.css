@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 body {
     margin: 0;
 }
+
 .grid-container {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: grid;
     grid-template-columns: 55vw 45vw;
     grid-template-rows: 100vh;
@@ -13,7 +15,48 @@ body {
     color: #101210;
     overflow-x: hidden;
     text-wrap: wrap;
-  }
+}
+
+@media (max-width: 960px) {
+    .grid-container {
+        grid-template-columns: 40vw 60vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-rows: 50vh 50vh;
+        grid-template-columns: 100vw;
+    }
+
+    .sign {
+        width: calc(150px + 70%) !important;
+    }
+
+    .title {
+        justify-self: center;
+        font-size: 7rem;
+        padding-left: 0;
+        padding-top: 50px;
+        width: 100%;
+        vertical-align: bottom !important;
+        text-align: center !important;
+    }
+
+    .icon-container {
+        width: auto !important;
+        padding-left: 0 !important;
+    }
+
+    .icons-bar {
+        width: 70%;
+    }
+
+    .list a {
+        padding-left: 10px;
+    }
+}
 
 .grid-item {
     vertical-align: middle;
@@ -28,6 +71,50 @@ body {
     justify-self: left;
     padding-left: 10vw;
     font-size: 6rem;
+    transition: opacity 200ms ease-in-out;
+}
+
+.sign {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    z-index: 3;
+    padding-left: 4vw;
+    transition: opacity 200ms ease-in-out;
+}
+
+.sign p {
+    width: 150px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    text-align: left;
+    justify-self: left;
+}
+
+.icons-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container {
+    margin: auto;
+    width: 25px;
+    padding-left: 30px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #101210;
+    transition: color 300ms ease-in-out;
+    transition: font 300ms ease-in-out;
+}
+
+.icon:hover {
+    color: #1f1f1f;
+    font-size: 2rem;
+    mix-blend-mode: hard-light;
 }
 
 .list {
@@ -41,9 +128,9 @@ body {
     position: relative;
     display: block;
     text-decoration: none;
-    color: #101210;
+    color: rgb(40, 35, 25);
     margin-top: 5px;
-    transition: font-weight 0.2s ease-out;
+    transition: font-weight 200ms ease-out;
 }
 
 .list-number {
@@ -51,10 +138,6 @@ body {
     width: 50px;
     margin-right: 10px;
 }
-
-.grid-container .list a:hover ~ .bg-container {
-    opacity: 0;
-} 
 
 .list a:hover {
     font-weight: 700;
@@ -67,14 +150,27 @@ body {
   bottom: 0;
   width: calc(100% - 25px);
   height: 1px;
-  background-color: black;
-  transition: width 0.3s ease-in-out;
+  background-color: rgb(40, 35, 25);
+  transition: width 300ms ease-in-out;
   transform: scaleX(0);
   transform-origin: bottom left;
 }
 
 .list a:hover::before {
   transform: scaleX(1);
+}
+
+.gradient-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+    background-color: azure;
+    transition: opacity 400ms ease-in-out;
 }
 
 .bg-container {
@@ -84,6 +180,25 @@ body {
     flex-direction: row;
     overflow: hidden;
     z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, transparent, rgba(240, 255, 255, 0.5) 60%, rgba(240, 255, 255));
 }
 
 .mesh-gradient {
@@ -98,28 +213,28 @@ body {
     opacity: .5;
     border-radius: 50vmax;
     position: relative;
-    filter: blur(10vmax);
+    filter: blur(7vmax);
 }
 
 .mesh-gradient :nth-child(1) {
     background-color: rgb(6 78 59);
     width: 40vmax;
     height: 40vmax;
-    animation: shape-1 linear 5s infinite;
+    animation: shape-1 ease-in-out 10s infinite;
 }
 
 .mesh-gradient :nth-child(2) {
     background-color: rgb(33, 71, 85);
     width: 30vmax;
     height: 40vmax;
-    animation: shape-2 linear 5s infinite;
+    animation: shape-2 ease-in-out 10s infinite;
 }
 
 .mesh-gradient :nth-child(3) {
     background-color: rgb(100, 64, 74);
     width: 50vmax;
     height: 20vmax;
-    animation: shape-3 linear 5s infinite;
+    animation: shape-3 ease-in-out 10s infinite;
 }
 
 @keyframes shape-1 {
