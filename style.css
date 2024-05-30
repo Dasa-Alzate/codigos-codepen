@@ -210,28 +210,28 @@ body {
 }
 
 .mesh-gradient div {
-    opacity: .5;
-    border-radius: 50vmax;
+    opacity: .6;
+    border-radius: 60vmax;
     position: relative;
     filter: blur(7vmax);
 }
 
 .mesh-gradient :nth-child(1) {
-    background-color: rgb(6 78 59);
+    background-color: thistle;
     width: 40vmax;
     height: 40vmax;
     animation: shape-1 ease-in-out 10s infinite;
 }
 
 .mesh-gradient :nth-child(2) {
-    background-color: rgb(33, 71, 85);
+    background-color: palegoldenrod;
     width: 30vmax;
     height: 40vmax;
     animation: shape-2 ease-in-out 10s infinite;
 }
 
 .mesh-gradient :nth-child(3) {
-    background-color: rgb(100, 64, 74);
+    background-color: skyblue;
     width: 50vmax;
     height: 20vmax;
     animation: shape-3 ease-in-out 10s infinite;
