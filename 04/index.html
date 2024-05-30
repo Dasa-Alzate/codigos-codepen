@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Pokemon layout test</title>
+</head>
+<body>
+  <div class="z-10 pt-16 w-screen h-screen">
+    
+    <div class="grid grid-cols-2">
+
+      <div class="items-center gap-2 grid grid-cols-1 ps-4">
+
+        <div class="flex flex-row items-center mt-1 group cursor-pointer">
+          <img class="group-hover:visible z-20 -m-2 animate-x invisible ps-2 size-16" src="assets/others/arrow.svg" alt="arrow" width="100" height="100">
+          <div class="group-hover:bg-zinc-200 group-hover:outline-zinc-200 z-10 flex place-items-center bg-stone-900 -mr-12 rounded-full overflow-hidden outline outline-4 outline-offset-2 outline-stone-900 size-18">
+            <div class="overflow-hidden size-18">
+              <img class="size-20" src="assets/team/torchic.png" alt="torchic">
+            </div>
+          </div>
+          <div class="col-span-5 bg-gradient-to-r from-10% from-zinc-800/90 via-40% via-stone-950/90 to-90% w-11/12 h-20 hexagon">
+            <div class="grid grid-cols-6 grid-rows-2 m-0 h-full ps-16">
+              <div class="grid grid-cols-5 grid-rows-1 col-span-5 divisor divisor-light divisor-down">
+                <div class="flex flex-row items-center col-span-2">
+                  <img class="" src="assets/others/pokeball.svg" alt="pokeball" width="15" height="15">
+                  <p class="font-medium text-sm text-yellow-50 ms-2">Torchic</p>
+                </div>
+  
+                <div class="flex flex-row items-center">
+                  <p class="font-medium text-sm text-yellow-50">Lvl. 12</p>
+                </div>
+
+                <div class="flex flex-row items-center col-span-2">
+                  <img class="bg-cyan-700 p-1 rounded-md" src="assets/others/gender-male.svg" alt="gender-male" width="25" height="25">
+                  <img class="bg-red-700 p-1 rounded-full fill-white ms-1" src="assets/status/burnt.svg" alt="burnt" width="25" height="25">
+                </div>
+              </div>
+
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 hp-bar rounded-full h-2">
+                    <div class="bg-green-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-yellow-50">HP
+                    <span class="float-right">30/74</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 xp-bar rounded-full h-2">
+                    <div class="bg-blue-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-yellow-50">XP
+                    <span class="float-right">422</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-row items-center mt-1 group cursor-pointer">
+          <img class="group-hover:visible z-20 -m-2 animate-x invisible ps-2 size-16" src="assets/others/arrow.svg" alt="arrow" width="100" height="100">
+          <div class="group-hover:bg-zinc-200 group-hover:outline-zinc-200 z-10 flex place-items-center bg-stone-900 -mr-12 rounded-full overflow-hidden outline outline-4 outline-offset-2 outline-stone-900 size-18">
+            <div class="m-auto">
+              <img class="size-20" src="assets/team/ralts.png" alt="ralts">
+            </div>
+          </div>
+          <div class="col-span-5 bg-gradient-to-r from-10% from-zinc-800/90 via-40% via-stone-950/90 to-90% w-11/12 h-20 hexagon">
+            <div class="grid grid-cols-6 grid-rows-2 m-0 h-full ps-16">
+              <div class="grid grid-cols-5 grid-rows-1 col-span-5 divisor divisor-light divisor-down">
+
+                <div class="flex flex-row items-center col-span-2">
+                  <img class="" src="assets/others/pokeball.svg" alt="pokeball" width="15" height="15">
+                  <p class="font-medium text-sm text-yellow-50 ms-2">Ralts</p>
+                </div>
+  
+                <div class="flex flex-row items-center">
+                  <p class="font-medium text-sm text-yellow-50">Lvl. 6</p>
+                </div>
+  
+                <div class="flex flex-row items-center col-span-2">
+                  <img class="bg-rose-600 p-1 rounded-md" src="assets/others/gender-female.svg" alt="gender-female" width="25" height="25">
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 hp-bar rounded-full h-2">
+                    <div class="bg-green-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-yellow-50">HP
+                    <span class="float-right">30/74</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 xp-bar rounded-full h-2">
+                    <div class="bg-blue-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-yellow-50">XP
+                    <span class="float-right">422</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-row items-center mt-1 group cursor-pointer">
+          <img class="group-hover:visible z-20 -m-2 animate-x invisible ps-2 size-16" src="assets/others/arrow.svg" alt="arrow" width="100" height="100">
+          <div class="group-hover:bg-zinc-200 group-hover:outline-zinc-200 z-10 flex place-items-center bg-stone-900 -mr-12 rounded-full overflow-hidden outline outline-4 outline-offset-2 outline-stone-900 size-18">
+            <div class="m-auto">
+              <img class="size-20" src="assets/team/haunter.png" alt="haunter">
+            </div>
+          </div>
+          <div class="col-span-5 bg-gradient-to-r from-10% from-zinc-800/90 via-40% via-stone-950/90 to-90% w-11/12 h-20 hexagon">
+            <div class="grid grid-cols-6 grid-rows-2 m-0 h-full ps-16">
+              <div class="grid grid-cols-5 grid-rows-1 col-span-5 divisor divisor-light divisor-down">
+                <div class="flex flex-row items-center col-span-2">
+                  <img class="" src="assets/others/pokeball.svg" alt="pokeball" width="15" height="15">
+                  <p class="font-medium text-sm text-yellow-50 ms-2">Haunter</p>
+                </div>
+  
+                <div class="flex flex-row items-center">
+                  <p class="font-medium text-sm text-yellow-50">Lvl. 6</p>
+                </div>
+  
+                <div class="flex flex-row items-center col-span-2 row-span-2">
+                  <img class="bg-rose-600 p-1 rounded-md" src="assets/others/gender-female.svg" alt="gender-female" width="25" height="25">
+                  <img class="bg-gray-700 p-1 rounded-full ms-1" src="assets/status/asleep2.svg" alt="asleep" width="25" height="25">
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 hp-bar rounded-full h-2">
+                    <div class="bg-green-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-yellow-50">HP
+                    <span class="float-right">30/74</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 xp-bar rounded-full h-2">
+                    <div class="bg-blue-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-yellow-50">XP
+                    <span class="float-right">422</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex flex-row items-center mt-1 group cursor-pointer">
+          <img class="group-hover:visible z-20 -m-2 animate-x invisible ps-2 size-16" src="assets/others/arrow.svg" alt="arrow" width="100" height="100">
+          <div class="group-hover:bg-zinc-200 group-hover:outline-zinc-200 z-10 flex place-items-center bg-stone-900 -mr-12 rounded-full overflow-hidden outline outline-4 outline-offset-2 outline-stone-900 size-18">
+            <div class="m-auto">
+              <img class="size-20" src="assets/team/pikachu.png" alt="pikachu">
+            </div>
+          </div>
+          <div class="col-span-5 bg-gradient-to-r from-10% from-zinc-800/90 via-40% via-stone-950/90 to-90% w-11/12 h-20 hexagon">
+            <div class="grid grid-cols-6 grid-rows-2 m-0 h-full ps-16">
+              <div class="grid grid-cols-5 grid-rows-1 col-span-5 divisor divisor-light divisor-down">
+                <div class="flex flex-row items-center col-span-2">
+                  <img class="" src="assets/others/pokeball.svg" alt="pokeball" width="15" height="15">
+                  <p class="font-medium text-sm text-white ms-2">Pikachu</p>
+                </div>
+  
+                <div class="flex flex-row items-center ">
+                  <p class="font-medium text-sm text-white">Lvl. 6</p>
+                </div>
+  
+                <div class="flex flex-row items-center col-span-2 row-span-2">
+                  <img class="bg-cyan-700 p-1 rounded-md" src="assets/others/gender-male.svg" alt="gender-male" width="25" height="25">
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 hp-bar rounded-full h-2">
+                    <div class="bg-green-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-white">HP
+                    <span class="float-right">30/74</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-row items-center col-span-2">
+                <div class="flex flex-col w-full pe-4">
+                  <div class="z-30 bg-gray-200 xp-bar rounded-full h-2">
+                    <div class="bg-blue-500 rounded-full h-2"></div>
+                  </div>
+                  <p class="font-medium text-sm text-white">XP
+                    <span class="float-right">422</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center ml-16">
+          <div class="bg-gradient-to-r from-10% from-zinc-700/50 via-30% via-zinc-900/50 to-90% w-11/12 h-20 hexagon">
+            <div class="ps-16">
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center ml-16">
+          <div class="bg-gradient-to-r from-10% from-zinc-700/50 via-30% via-zinc-900/50 to-90% w-11/12 h-20 hexagon">
+            <div class="ps-16">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col">
+        <div class="flex flex-row flex-none items-center bg-yellow-50 mx-2 rounded-full outline-yellow-50 w-5/6 h-20 outline outline-4 outline-offset-2">
+          <div class="flex justify-center items-center bg-sky-800 w-1/2 h-6 hexagon ms-4">
+            <p class="h-fit font-medium text-sm text-yellow-50">¡Listo para luchar!</p>
+          </div>
+          <div class="grid grid-cols-1 w-full h-full me-2 ms-8">
+            <div class="divisor divisor-dark divisor-down">
+              <p class="pt-1 w-full font-medium text-md text-stone-950">Torchic</p>
+            </div>
+            <div class="flex items-center">
+              <div class="flex flex-row items-center p-1 w-fit">
+                <img class="p-1 rounded-l-lg h-6 type-fuego" src="assets/tipos/fuego.svg" alt="asleep" width="25" height="25">
+                <div class="flex flex-row items-center bg-gray-800/75 rounded-r-lg h-6">
+                  <p class="my-auto px-2 h-fit text-sm text-white">FUEGO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-none items-center bg-stone-800/75 mt-14 rounded-md w-5/6 h-8 font-medium text-yellow-50 cursor-pointer hover:bg-stone-800/90">
+          <p class="px-4 w-1/3">Ataque rapido</p>
+          
+          <div class="flex flex-row flex-auto items-center p-1 w-fit">
+            <img class="p-1 rounded-l-lg h-6 type-normal" src="assets/tipos/normal.svg" alt="asleep" width="25" height="25">
+            <div class="flex flex-row items-center bg-gray-700/50 rounded-r-lg w-18 h-6">
+              <p class="my-auto px-2 h-fit text-sm text-white w-full text-justify">Normal</p>
+            </div>
+          </div>
+
+          <p class="float-end pe-4">20/20</p>
+        </div>
+        
+        <div class="flex flex-none items-center bg-stone-800/75 mt-2 rounded-md w-5/6 h-8 font-medium text-yellow-50 cursor-pointer hover:bg-stone-800/90">
+          <p class="px-4 w-1/3">Ascuas</p>
+          
+          <div class="flex flex-row flex-auto items-center p-1 w-fit">
+            <img class="p-1 rounded-l-lg h-6 type-fuego" src="assets/tipos/fuego.svg" alt="asleep" width="25" height="25">
+            <div class="flex flex-row items-center bg-gray-700/50 rounded-r-lg h-6 w-18">
+              <p class="my-auto px-2 h-fit text-sm text-white w-full text-justify tracking-widest">Fuego</p>
+            </div>
+          </div>
+
+          <p class="float-end pe-4">12/15</p>
+        </div>
+        
+        <div class="flex flex-none items-center bg-stone-800/50 mt-2 rounded-md w-5/6 h-8 font-medium text-yellow-50">
+        </div>
+        
+        <div class="flex flex-none items-center bg-stone-800/50 mt-2 rounded-md w-5/6 h-8 font-medium text-yellow-50">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="absolute flex pl-4 items-center top-0 w-full h-10 shadow-lg bg-black/50 border-b border-slate-300/25">
+    <p class="text-white"> ♦  Tu equipo Pokémon</p>
+  </div>
+
+  <div class="absolute flex gap-2 items-center top-0 left-1/2 -ml-24 w-48 h-12 bg-white rounded-b-3xl">
+    <div class="flex items-center justify-center bg-main shadow-sm shadow-neutral-700/50 rounded-xl rounded-tl-3xl w-8 -ml-4 -mt-1 font-bold text-white">
+      <p class="text-base">Z</p><p class="text-xs">L</p>
+    </div>
+    
+    <div class="flex items-center justify-center w-1/3">
+      <img class="size-8" src="assets/others/bag.svg" alt="pokeball" width="100" height="100">
+    </div>
+
+    <div class="bg-main flex h-16 items-center justify-center mx-2 w-14 pentagon">
+      <img class="size-8" src="assets/others/pokeball-solid.svg" alt="pokeball" width="100" height="100">
+    </div>
+
+    <div class="flex items-center justify-center bg-main shadow-sm shadow-neutral-700/50 rounded-xl rounded-tr-3xl w-8 -mr-4 -mt-1 font-bold text-white">
+      <p class="text-base">Z</p><p class="text-xs">R</p>
+    </div>
+
+  </div>
+
+  <div class="absolute flex justify-end pl-4 items-center bottom-0 w-full h-10 bg-black/50 border-t border-slate-300/25">
+    <div class="text-white flex float-right pr-4 cursor-pointer hover:font-bold">
+      <span class="rounded-full flex h-6 w-6 aspect-square justify-center bg-gray-50 text-blue-800 font-bold">B</span>
+      <p class="pl-1 transition-all duration-300">Volver</p>
+    </div>
+  </div>
+
+  <img class="top-0 brightness-50 -z-10 absolute bg-cover w-screen h-screen" src="assets/wpp.jpg" alt="wpp">
+</body>
+</html>
